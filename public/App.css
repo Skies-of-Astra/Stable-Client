@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Comic";
+  src: url(./Comic-Book.woff) format("woff");
+  /*url('CoinageCapsKrugerGray.woff') format('woff');*/
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Comic";
+  margin-bottom: 2rem;
+  color: #aaa;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p,
+input {
+  font-size: 2rem;
+}
+
+input {
+  border: none;
+  border-bottom: 4px solid #999;
+  background: none;
+  color: #fff;
+  margin-right: 1rem;
+  transition: all 0.3s ease-out;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+input:focus::placeholder {
+  color: #fff;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 4px solid #fff;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 0.6em 2em;
+  border-radius: 8rem;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+
+.loading-animation {
+  animation: loading 0.6s ease-out 0s infinite;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.comic-container {
+  position: relative;
+}
+
+.bubble {
+  font-family: "comic";
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: #fff;
+  /* border-radius: -20%; */
+  color: #000;
+  font-size: 1.2rem;
+  max-width: 400px;
+  padding: 0.2em 0.5em;
+  border: 2px solid #333;
+}
+.line-divider {
+  position: absolute;
+  top: 30%;
+  height: 10px;
+  background-color: #000;
+  width: 100%;
+}
+.line-divider2 {
+  top: 60%;
+}
+
+.bubble2 {
+  top: 35%;
+  left: initial;
+  right: 5%;
+}
+
+.bubble3 {
+  top: initial;
+  left: 5%;
+  right: initial;
+  bottom: 28%;
+}
+
+.img-wrapper,
+.img-wrapper img {
+  width: 100%;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
