@@ -1,2 +1,27 @@
 # Stability Client prototype
-This app presents a collection of text inputs that help users contruct and narrative text prompt. Once a user submits the prompt it is sent to the Stable API, if a successful connection is established the client app should receive the image and draw the comic panel.
+This app interfaces with the Stability API and generates a comic book panel based on a user text prompt (client).
+
+## Technology
+This project uses the following technolgies:
+* React
+* Axios
+
+## Setup
+To run this project, clone the repo:
+
+```
+$ cd ../repofolder
+$ npm start
+```
+
+## Features
+* Uses react to draw the UI
+* Uses Axios to generate a rest request to the server
+
+
+--
+
+Contact:
+lechwojas@gmail.com
+
+
